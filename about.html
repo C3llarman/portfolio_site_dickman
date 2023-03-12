@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="container">
         <img class="logo" src="img/logo.png" alt="Jake Dickman">
         <!--NAVIGATION-->
         <nav>
@@ -28,8 +28,9 @@
       </div>
     </header>
 
-    <main>
+  <main>
         <!--Start about heading Section-->
+      <div id="about-main">
         <div>
             <div>
                 <h1>ABOUT</h1>
@@ -38,24 +39,25 @@
         <!--end about heading Section-->
         <!--Start about content Section-->
         <div>
-            <div>
+            <div id="my-story">
                 <picture> 
                     <source srcset="img/dickman_portfolio_photo_1x.jpg" media="(max-width:767px)">
-                    <img src="img/dickman_portfolio_photo_2x.jpg" alt="Jake Dickman - Designer">
+                    <img class="about-img" src="img/dickman_portfolio_photo_2x.jpg" alt="Jake Dickman - Designer">
                 </picture>
-
+                <p>Welcome to my UX portfolio website! My name is Jake Dickman and I am an experienced professional with a diverse background in brewery operations and restaurant management. I bring a unique perspective to the field of UX design, with a strong understanding of customer service and user experience in a real-world setting. I am now looking to transition into a career in UX design, leveraging my skills in problem-solving and process improvement to create intuitive and user-centered designs.</p>
+                         
                 <div>
                     <div>
                          <h2>My Story</h2>
-                         <p>Lorem Ipsum</p>
-                         <p>Lorem Ipsum</p>
+                         <p>As a UX designer, I possess a wide range of skills and tools including user research, usability testing, information architecture, wireframing and prototyping. I am proficient in design software such as Adobe XD, Figma, and VScode, and have experience conducting user research using methods such as user interviews, surveys, and usability testing. I am also well-versed in user-centered design principles and familiar with design thinking and agile methodologies
+                        </p>
                             <div>
-                                <a href="files/jake_dickman_cv_resume.pdf" class="button_cv">Resume</a>
+                                <a href="files/jake_dickman_cv_resume.pdf" class="button_2">Resume</a>
                             </div>
                     </div>
-                    <div>
+                    <div class="float-container">
                          <h2>Skills & Tools</h2>
-                            <div>
+                            <div class="float-child-left">
                                 <h3>Relevent Skills</h3>
                                 <ul>
                                     <li>Wireframing</li>
@@ -63,7 +65,7 @@
                                     <li>User Testing</li>
                                 </ul>
                             </div>
-                            <div>
+                            <div class="float-child-right">
                                 <h3>Tools I Use</h3>
                                 <ul>
                                     <li>Figma</li>
@@ -75,36 +77,37 @@
                 </div>
             </div>
         </div>
+      </div>
         <!--end about content Section-->
-    </main>
+  </main>
     </div>
     <!--End My Work-->
     <!--Footer Start-->
     <footer id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p> Do you like my work and want to discuss opportunities? please get in touch. <a href="tel:+15306807137"> +1 (530) 680-7137.</a> or Skype me at <a href="skype:https://join.skype.com/invite/oa7ot52oKXA1">Jake's Skype</a> Prefer sending and email? </p>
         <div>
-          <h2>Get In Touch</h2>
-          <p> Do you like my work and want to discuss opportunities? please get in touch. <a href="tel:+15306807137"> +1 (530) 680-7137.</a> or Skype me at <a href="skype:https://join.skype.com/invite/oa7ot52oKXA1">Jake's Skype</a> Prefer sending and email? </p>
-          <div>
-            <a href="malto:Jpdickman@gmail.com" class="button_2">Email Me</a>
-          </div>
-          <div>
-             <ul>
-                <li><a href="https://www.linkedin.com/in/jacob-dickman-7006a3128/" target="_blank">
-                  <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci1saW5rZWRpbiIgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgOGE2IDYgMCAwIDEgNiA2djdoLTR2LTdhMiAyIDAgMCAwLTItMiAyIDIgMCAwIDAtMiAydjdoLTR2LTdhNiA2IDAgMCAxIDYtNnoiLz48cmVjdCBoZWlnaHQ9IjEyIiB3aWR0aD0iNCIgeD0iMiIgeT0iOSIvPjxjaXJjbGUgY3g9IjQiIGN5PSI0IiByPSIyIi8+PC9zdmc+">
-                </a></li>
-                <li><a href="https://mobile.twitter.com/c3llarman" target="_blank">
-                  <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci10d2l0dGVyIiBmaWxsPSJub25lIiBoZWlnaHQ9IjI0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMyAzYTEwLjkgMTAuOSAwIDAgMS0zLjE0IDEuNTMgNC40OCA0LjQ4IDAgMCAwLTcuODYgM3YxQTEwLjY2IDEwLjY2IDAgMCAxIDMgNHMtNCA5IDUgMTNhMTEuNjQgMTEuNjQgMCAwIDEtNyAyYzkgNSAyMCAwIDIwLTExLjVhNC41IDQuNSAwIDAgMC0uMDgtLjgzQTcuNzIgNy43MiAwIDAgMCAyMyAzeiIvPjwvc3ZnPg==">
-                </a></li>
-                <li><a href="https://www.instagram.com/jakedickmandesign/" target="_blank">
-                  <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci1pbnN0YWdyYW0iIGZpbGw9Im5vbmUiIGhlaWdodD0iMjQiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgaGVpZ2h0PSIyMCIgcng9IjUiIHJ5PSI1IiB3aWR0aD0iMjAiIHg9IjIiIHk9IjIiLz48cGF0aCBkPSJNMTYgMTEuMzdBNCA0IDAgMSAxIDEyLjYzIDggNCA0IDAgMCAxIDE2IDExLjM3eiIvPjxsaW5lIHgxPSIxNy41IiB4Mj0iMTcuNTEiIHkxPSI2LjUiIHkyPSI2LjUiLz48L3N2Zz4=">
-                </a></li>
-             </ul>
-          </div>
-          <div>
-            <p>Copyright Jake Dickman 2023 All Rights Reserved</p>
-          </div>
+          <a href="mailto:Jpdickman@gmail.com" class="button_2">Email Me</a>
         </div>
-      </footer>
+        <div id="div-socials">
+           <ul id="socials">
+              <li><a href="https://www.linkedin.com/in/jacob-dickman-7006a3128/" target="_blank">
+                <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci1saW5rZWRpbiIgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgOGE2IDYgMCAwIDEgNiA2djdoLTR2LTdhMiAyIDAgMCAwLTItMiAyIDIgMCAwIDAtMiAydjdoLTR2LTdhNiA2IDAgMCAxIDYtNnoiLz48cmVjdCBoZWlnaHQ9IjEyIiB3aWR0aD0iNCIgeD0iMiIgeT0iOSIvPjxjaXJjbGUgY3g9IjQiIGN5PSI0IiByPSIyIi8+PC9zdmc+">
+              </a></li>
+              <li><a href="https://mobile.twitter.com/c3llarman" target="_blank">
+                <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci10d2l0dGVyIiBmaWxsPSJub25lIiBoZWlnaHQ9IjI0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMyAzYTEwLjkgMTAuOSAwIDAgMS0zLjE0IDEuNTMgNC40OCA0LjQ4IDAgMCAwLTcuODYgM3YxQTEwLjY2IDEwLjY2IDAgMCAxIDMgNHMtNCA5IDUgMTNhMTEuNjQgMTEuNjQgMCAwIDEtNyAyYzkgNSAyMCAwIDIwLTExLjVhNC41IDQuNSAwIDAgMC0uMDgtLjgzQTcuNzIgNy43MiAwIDAgMCAyMyAzeiIvPjwvc3ZnPg==">
+              </a></li>
+              <li><a href="https://www.instagram.com/jakedickmandesign/" target="_blank">
+                <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci1pbnN0YWdyYW0iIGZpbGw9Im5vbmUiIGhlaWdodD0iMjQiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgaGVpZ2h0PSIyMCIgcng9IjUiIHJ5PSI1IiB3aWR0aD0iMjAiIHg9IjIiIHk9IjIiLz48cGF0aCBkPSJNMTYgMTEuMzdBNCA0IDAgMSAxIDEyLjYzIDggNCA0IDAgMCAxIDE2IDExLjM3eiIvPjxsaW5lIHgxPSIxNy41IiB4Mj0iMTcuNTEiIHkxPSI2LjUiIHkyPSI2LjUiLz48L3N2Zz4=">
+              </a></li>
+           </ul>
+        </div>
+        <div>
+          <p>Copyright Jake Dickman 2023 All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
     <!--Footer End-->
   </body>
 </html>
