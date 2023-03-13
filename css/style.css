@@ -132,6 +132,7 @@ a:active {
 .container {
     padding: 0 15px;
     max-width: 1200px;
+    margin: 0 auto;
 }
 .row {
     margin: 25px 0;
@@ -238,7 +239,7 @@ footer {
     display: inline-block;
     width: 100%;
     text-align: left;
-    margin: auto;
+    margin: 0 auto;
     max-width: 1150px;
 }
 .pulse-container {
