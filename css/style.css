@@ -280,6 +280,27 @@ footer {
     clear: both;
     display: table;
 }
+
+/* animation
+*/
+@keyframes color-change {
+    from {fill: #5b7484;}
+    to {fill: #BC5A36}
+}
+@keyframes item-move {
+    from {transform: translate(0,0px);}
+    to {transform: translate(10px,10px);}
+}
+.animation-class {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.animation-class-move {
+    animation: 10s item-move infinite alternate linear
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
