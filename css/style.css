@@ -25,6 +25,7 @@ h1 {
 h2 {
     font-size: 1.75em;
     font-weight: 700;
+    text-align: center;
 }
 h3 {
     font-size: 1.75em;
@@ -59,10 +60,11 @@ a:active {
     background-color:#ffffff;
     color: #ffffff;
     font-weight: 400;
+    text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #BC5A36;
-    Transition: 0.2s opacity;
+    transition-duration: 0.2s opacity;
 }
 .button:hover {
     opacity: 0.8;
@@ -132,17 +134,21 @@ a:active {
 .container {
     padding: 0 15px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .row {
     margin: 25px 0;
 }
 #my-work .row { 
-    padding-bottom: 25px; 
+    padding-bottom: 30px; 
     border-bottom: 1px solid #4a4a4a; 
 }
 #hero h1 {
     text-align: center;
+}
+#hero span {
+    display: block;
 }
 .logo {
     max-width: 250px;
@@ -175,7 +181,7 @@ nav > ul > li > a:active {
     color: azure;
 }
 .project-img {
-    float: right;
+    float: left;
     width: 80%;
     max-width: 250px;
     margin: auto;
@@ -267,4 +273,55 @@ footer {
     vertical-align: middle;
     margin-right: 40px;
     max-width: 400px;
+}
+[class*="col-"] {
+    float: left;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) 
+{
+header {
+    text-align: unset;
+    padding: 20px 0 13px;
+}
+    
+nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+}
+.col-md-6 {
+    width: 50%;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) 
+{
+.col-lg-7 {
+    width: 58.33%;
+}
+.col-lg-7 {
+    width: 41.67%;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) 
+{
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) 
+{
 }
