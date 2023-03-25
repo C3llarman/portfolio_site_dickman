@@ -220,8 +220,7 @@ footer {
     margin-bottom: 15px;
 }
 #my-story {
-    padding-bottom: 25px; 
-    border-bottom: 1px solid #4a4a4a; 
+    text-align: left; 
 }
 .float-container {
     border: 1px solid black;
@@ -245,6 +244,9 @@ footer {
     width: 100%;
     text-align: left;
     margin: 0 auto;
+}
+.about-h1 {
+    text-align: center;
 }
 .pulse-container {
     border: 1px solid black;
@@ -289,7 +291,7 @@ footer {
 }
 @keyframes item-move {
     from {transform: translate(0,0px);}
-    to {transform: translate(10px,10px);}
+    to {transform: translate(0px,50px);}
 }
 .animation-class {
     animation-duration: 4s;
