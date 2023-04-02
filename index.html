@@ -11,19 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&family=Proza+Libre&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e39e3a6ddf.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
           <img class="logo" src="img/logo.png" alt="Jake Dickman">
         <!--NAVIGATION-->
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon-menu" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
         <!--NAVIGATION-->
       </div>
     </header>
@@ -122,6 +126,10 @@
       </div>
     </footer>
     <!--Footer End-->
+    <script 
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
   </html>
